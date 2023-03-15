@@ -12,7 +12,7 @@ import java.util.*;
  */
 public class Hangman {
     public static void main(String[] args) throws FileNotFoundException {
-        Scanner scanner = new Scanner(new File("/Users/david/Projects/words_alpha.txt"));
+        Scanner scanner = new Scanner(new File("/Users/david/Projects/WordGuess/words_alpha.txt"));
         Scanner keyboard = new Scanner(System.in);
         List<String> words = new ArrayList<>();
 
@@ -22,7 +22,7 @@ public class Hangman {
         Random rand = new Random();
 
         String word = words.get(rand.nextInt(words.size()));
-        System.out.println(word);
+//        System.out.println(word);
 
 
         List<Character> playerGuesses = new ArrayList<>();
